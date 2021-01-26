@@ -1,0 +1,22 @@
+{
+  "name": "js-test-project",
+  "version": "1.0.0",
+  "description": "A simple project with a single failing test",
+  "scripts": {
+    "test": "mocha --watch test/**/*spec.js",
+    "coverage": "nyc --reporter=lcov --reporter=text-summary mocha test/**/*spec.js",
+    "lint": "yarn run eslint src/**.js"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "date-fns": "^2.16.1",
+    "mocha": "^4.0.1",
+    "nyc": "^15.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
